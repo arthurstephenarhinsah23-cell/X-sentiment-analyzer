@@ -1,0 +1,156 @@
+/* advanced-style.css - No gradients on pie slices */
+
+/* Root container - vibrant gradient background */
+.root {
+    -fx-background-color: linear-gradient(to bottom right, #1a2a6c, #b21f1f, #fdbb4d);
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+
+/* Title */
+.title-label {
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 4, 0, 2, 2);
+    -fx-font-family: 'Segoe UI', 'Arial', sans-serif;
+}
+
+/* Manual input label */
+.label {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 2, 0, 1, 1);
+}
+
+/* TextField */
+.text-field {
+    -fx-background-color: rgba(255, 255, 255, 0.9);
+    -fx-background-radius: 8;
+    -fx-border-color: transparent;
+    -fx-border-radius: 8;
+    -fx-padding: 8 12;
+    -fx-font-size: 14px;
+    -fx-text-fill: #333;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 4, 0, 2, 2);
+}
+.text-field:focused {
+    -fx-background-color: white;
+    -fx-border-color: #fdbb4d;
+    -fx-border-width: 2;
+}
+
+/* TextArea */
+.text-area {
+    -fx-background-color: rgba(255, 255, 255, 0.95);
+    -fx-background-radius: 10;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 10;
+    -fx-border-width: 1;
+    -fx-font-size: 13px;
+    -fx-font-family: 'Courier New', monospace;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 8, 0, 4, 4);
+}
+.text-area .content {
+    -fx-background-color: transparent;
+}
+.text-area:focused {
+    -fx-border-color: #fdbb4d;
+    -fx-border-width: 2;
+}
+
+/* Summary Box (Label) */
+.summary-box {
+    -fx-background-color: rgba(0, 0, 0, 0.7);
+    -fx-background-radius: 10;
+    -fx-text-fill: white;
+    -fx-padding: 15;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-border-color: rgba(255,255,255,0.3);
+    -fx-border-radius: 10;
+    -fx-border-width: 1;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 8, 0, 4, 4);
+}
+
+/* ========== PIE CHART STYLING (NO GRADIENTS) ========== */
+.chart-pie {
+    -fx-border-color: rgba(255,255,255,0.5);
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 4, 0, 2, 2);
+}
+
+/* Chart labels */
+.chart-pie-label {
+    -fx-fill: white;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 2, 0, 1, 1);
+}
+.chart-pie-label-line {
+    -fx-stroke: rgba(255,255,255,0.8);
+    -fx-stroke-width: 1.5;
+}
+
+/* Chart title and legend */
+.chart-title {
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 2, 0, 1, 1);
+}
+.chart-legend {
+    -fx-background-color: rgba(0,0,0,0.6);
+    -fx-background-radius: 8;
+    -fx-padding: 5;
+}
+.chart-legend-item {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+.chart-legend-item-symbol {
+    -fx-background-radius: 5;
+}
+
+/* Buttons */
+.main-button {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #e6e6e6);
+    -fx-text-fill: #333;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 10 25;
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-border-color: #cccccc;
+    -fx-border-width: 1;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 4, 0, 2, 2);
+    -fx-transition: all 0.2s ease;
+}
+.main-button:hover {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #f5f5f5);
+    -fx-effect: dropshadow(gaussian, #fdbb4d, 8, 0, 0, 0);
+    -fx-border-color: #fdbb4d;
+}
+.main-button:pressed {
+    -fx-background-color: linear-gradient(to bottom, #e6e6e6, #d9d9d9);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 2, 0, 1, 1);
+}
+
+/* ProgressBar */
+.progress-bar {
+    -fx-accent: #fdbb4d;
+    -fx-background-color: rgba(255,255,255,0.3);
+    -fx-background-radius: 5;
+    -fx-padding: 0;
+}
+.progress-bar .bar {
+    -fx-background-color: linear-gradient(to right, #fdbb4d, #ff8c00);
+    -fx-background-radius: 5;
+}
+.progress-bar .track {
+    -fx-background-color: rgba(0,0,0,0.3);
+    -fx-background-radius: 5;
+}
